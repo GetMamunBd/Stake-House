@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --RedColor: #c21500;
+    --YellowColor: #ffc500;
+    --Gradient: linear-gradient(to left, #c21500, #ffc500);
+    --GrayText: #656565;
+    --BlackColor: #343434;
+}
+
+/* *************** REUSEABLE ITEM *************** */
+.btn {
+    display: inline-block;
+    height: 50px;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    line-height: 45px;
+}
+
+.btn:hover {
+    color: var(--RedColor);
+    font-weight: 600;
+    box-shadow: inset 0px -50px 0 white;
+    transition: all .6s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    text-align: center;
+    margin: 0 auto 80px;
+}
+
+.top h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--BlackColor);
+}
+
+.top p {
+    font-size: .7rem;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    color: var(--GrayText);
+    font-weight: 500;
+}
+
+/* *************** REUSEABLE ITEM END *************** */
+
+
+/* *************** HEADER SECTION START *************** */
+
+header {
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    background-image: url(../images/home-bg-slideshow2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .bg {
+    color: white;
+    background: linear-gradient(to left, rgba(194, 21, 0, .8), rgba(255, 197, 0, .8));
+    width: 100%;
+    height: 100vh;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.header-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 10px;
+}
+
+.header-text a {
+    color: white;
+    margin-top: 30px;
+}
+
+/* *************** HEADER SECTION END *************** */
+
+
+/* *************** NAVIGATION SECTION START *************** */
+.nav {
+    height: 80px;
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(161, 161, 161, 0.1);
+}
+
+.logo {
+    color: #505050;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--GrayText);
+}
+
+.nav-link:hover {
+    color: var(--RedColor);
+}
+
+.active {
+    color: var(--RedColor);
+    font-weight: 500;
+}
+.burger{
+    display: none;
+}
+
+/* *************** NAVIGATION SECTION END *************** */
+
+
+/* *************** WHY CHOOSE US START *************** */
+.choose-us {
+    background-color: #F0F0F0;
+    padding: 150px 6%;
+}
+
+.choose-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.choose-content .one {
+    background-color: #fff;
+    padding: 0 40px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.icon i {
+    background: var(--BlackColor);
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+    line-height: 90px;
+}
+
+.food {
+    color: white;
+    font-size: 40px;
+}
+
+.one {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: .3s ease-in-out;
+}
+
+.one:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.one:hover .one-text h3 {
+    color: #c21500;
+    font-weight: 700;
+}
+
+.one:hover .icon i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: var(--RedColor);
+    border-radius: 50%;
+}
+
+.icon p {
+    text-align: center;
+    display: inline-block;
+    line-height: 90px;
+}
+
+.one-text h3 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--BlackColor);
+    margin: 80px 0 25px;
+    transition: .5s ease;
+}
+
+.one-text p {
+    font-size: 1rem;
+    letter-spacing: .5px;
+    line-height: 1.8;
+    color: var(--GrayText);
+}
+
+/* *************** WHY CHOOSE US END *************** */
+
+
+/* ******************* OUR STORY START ******************* */
+.our-story {
+    padding: 150px 6%;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    column-gap: 30px;
+}
+
+.story-one {
+    width: 100%;
+}
+
+.story-one .image {
+    height: 300px;
+    background: url(../images/about-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.story-one p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: var(--GrayText);
+}
+
+.story-two .image {
+    height: 300px;
+    background: url(../images/slide-img3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.story-two p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--GrayText);
+    line-height: 1.8;
+}
+
+.story-three h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--BlackColor);
+    margin-bottom: 20px;
+}
+
+.story-three p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--GrayText);
+    line-height: 1.8;
+}
+
+.story-three ul {
+    margin: 20px 0 0 25px;
+}
+
+.story-three ul li {
+    margin-bottom: 10px;
+    color: var(--GrayText);
+    font-weight: 500;
+}
+
+/* ******************* OUR STORY END ******************* */
+
+
+/* ******************* VIDEO SECTION START ******************* */
+.video {
+    background: url(../images/video-bg.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.video-bg-color {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.452));
+    width: 100%;
+    height: 100%;
+}
+
+.video-text {
+    position: absolute;
+    color: white;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-btn {
+    margin-bottom: 20px;
+}
+
+.video-text h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.video-text p {
+    line-height: 1.8;
+    color: #c2c2c2;
+}
+
+/* ******************* VIDEO SECTION END ******************* */
+
+
+/* ******************* FOOD MENU SECTION START ******************* */
+#menu {
+    padding: 150px 6%;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    padding: 15px;
+    transition: .5s ease;
+}
+
+.item-list:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+}
+
+.price {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: var(--BlackColor);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.item-list:hover .price {
+    background-color: var(--RedColor);
+    border-radius: 5px;
+    color: white;
+    transition: .5s ease;
+}
+
+.menu-info h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--BlackColor);
+    margin-bottom: 25px;
+}
+
+.menu-info p {
+    color: var(--GrayText);
+    line-height: 1.8;
+}
+
+.img {
+    position: relative;
+}
+
+.menu-image1 {
+    background: url(../images/gallery-img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-image2 {
+    background: url(../images/gallery-img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-image3 {
+    background: url(../images/gallery-img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-image4 {
+    background: url(../images/gallery-img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-image5 {
+    background: url(../images/gallery-img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-image6 {
+    background: url(../images/gallery-img6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* ******************* FOOD MENU SECTION END ******************* */
+
+
+/* ******************* MEET OUR CHEFS START ******************* */
+.chefs {
+    padding: 150px 6%;
+    background-color: #F0F0F0;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+.member:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.member:hover .member-info {
+    box-shadow: inset 0 -100px 0 #c21500;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.member:hover .member-info h3,
+.member:hover .member-info p {
+    color: white;
+}
+
+.member .img1 {
+    width: 100%;
+    height: 200px;
+    background: url(../images/chef1.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member .img2 {
+    width: 100%;
+    height: 200px;
+    background: url(../images/chef2.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member .img3 {
+    width: 100%;
+    height: 200px;
+    background: url(../images/chef3.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member-info {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: .5s ease-in-out;
+}
+
+.member-info h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--BlackColor);
+    letter-spacing: 2px;
+    transition: all .5s ease .2s;
+}
+
+.member-info p {
+    color: var(--GrayText);
+    font-size: .8rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    transition: all .5s ease .2s;
+}
+
+.join {
+    height: 300px;
+    background-color: var(--RedColor);
+    color: white;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+}
+
+.join-info {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.join-icon {
+    font-size: 2.5rem;
+}
+
+.join-info p {
+    line-height: 1.8;
+    color: #d4d4d4;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.join-info a {
+    color: white;
+}
+
+.details {
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    row-gap: 60px;
+    column-gap: 30px;
+}
+
+.details1 {
+    text-align: center;
+    width: 95%;
+}
+
+.head {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--BlackColor);
+    margin-bottom: 20px;
+}
+
+.tag {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-top: 5px;
+    color: var(--GrayText);
+}
+
+.details2 {
+    text-align: center;
+    width: 95%;
+}
+
+/* ******************* MEET OUR CHEFS END ******************* */
+
+
+/* ******************* FOOD GALERY START ******************* */
+#gallery {
+    padding: 150px 6%;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 30px;
+    row-gap: 100px;
+}
+
+.image1 {
+    background: url(../images/gallery-img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.image2 {
+    background: url(../images/gallery-img2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.image3 {
+    background: url(../images/gallery-img3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.image4 {
+    background: url(../images/gallery-img4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.image5 {
+    background: url(../images/gallery-img5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.image6 {
+    background: url(../images/gallery-img6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.image-gallery p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--GrayText);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zoom-icon {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #c21300cb;
+}
+
+.image:hover .overlay {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+/* ******************* FOOD GALERY END ******************* */
+
+
+/* ******************* CONTACT SECTION START ******************* */
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 6%;
+    position: relative;
+}
+
+.contact h2,
+.contact p {
+    color: white;
+}
+
+form {
+    display: grid;
+    width: 65%;
+    row-gap: 30px;
+    margin: auto;
+}
+
+.field {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+    height: 45px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.message {
+    height: 100px;
+    resize: none;
+}
+
+::placeholder {
+    color: rgb(190, 190, 190)
+}
+
+.field:focus,
+.field:hover {
+    outline: none;
+    border-bottom: 2px solid #fff;
+    transition: .5s ease;
+    box-shadow: inset 0 -45px 0 rgba(255, 255, 255, .25);
+}
+
+.message:focus,
+.message:hover {
+    outline: none;
+    border-bottom: 2px solid #fff;
+    transition: .5s ease;
+    box-shadow: inset 0 -100px 0 rgba(255, 255, 255, .25);
+}
+
+.send {
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--BlackColor);
+}
+
+.send:hover {
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 -45px 0 #c21500;
+    transition: .5s ease;
+}
+
+/* ******************* CONTACT SECTION END ******************* */
+
+
+
+
+/* ******************* RESPONSIVE SECTION START ******************* */
+
+@media screen and (max-width:1024px) {
+    .image-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:980px) {
+    nav ul {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+
+    .burger div {
+        padding: 1.5px 15px;
+        background-color: #343434;
+        margin: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width:780px) {
+    .header-text {
+        width: 85%;
+    }
+
+    .choose-content {
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+    }
+
+    .story-content {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 30px;
+        row-gap: 60px;
+    }
+
+    .story-three {
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+    .video-text {
+        width: 85%;
+    }
+
+    .team {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:450px){
+    .story-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-item {
+        grid-template-columns: 1fr;
+    }
+    .menu-info h3 {
+        margin-bottom: 5px;
+    }
+    .team {
+        grid-template-columns: 1fr;
+    }
+}
