@@ -874,4 +874,10 @@ form {
     .team {
         grid-template-columns: 1fr;
     }
+    .member .img1,
+    .member .img2,
+    .member .img3 {
+        height: 300px;
+    }
+}
 }
