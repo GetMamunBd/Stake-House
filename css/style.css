@@ -586,7 +586,7 @@ header .bg {
     width: 100%;
     margin-top: 80px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-template-columns: 1fr 1fr;
     row-gap: 60px;
     column-gap: 30px;
 }
@@ -858,6 +858,9 @@ form {
 
     .team {
         grid-template-columns: 1fr 1fr;
+    }
+    .details {
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width:450px){
