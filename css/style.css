@@ -879,5 +879,8 @@ form {
     .member .img3 {
         height: 300px;
     }
+    .details {
+        grid-template-columns: 1fr;
+    }
 }
 }
